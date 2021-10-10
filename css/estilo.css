@@ -1,0 +1,36 @@
+.header img{
+   
+    width: 12rem;
+    /*tamaño */
+}
+  
+#navbar {
+    overflow: hidden;
+    background-color: #DF3243 ;
+}
+  
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1em;
+   
+    
+}
+#navbar a, samp{
+    font-family: 'Jost', sans-serif;
+}
+
+#navbar a:hover {
+    background-color: #DA5C62;
+    color: black;
+}
+  
+#navbar a.active {
+    background-color: #DA5C62;
+    color: white;
+    
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo AES Web</title>
+</head>
+
+<body style="background-image: url(./img/planeta-tierra-con-destello-de-luz_3840x2160_xtrafondos.com.jpg); ">
+    <p style="color: white;">
+        <center>
+            <div style="background-image: url(./img/planeta-tierra-con-destello-de-luz_3840x2160_xtrafondos.com.jpg);">
+                <header>
+                    <div style="justify-content: center;">
+                        <br>
+                        <center>
+                            <h1>
+                                <p style="color: aliceblue;">Cifrado AES</p>
+                            </h1>
+                        </center>
+                        <br>
+                        <div style=" background-color: rgba(163, 76, 76, 0.5);  ">
+                            <center>
+                                <table>
+                                    <th>
+                                        <a href="index.html" style="color: white;">Inicio</a>
+                                    </th>
+                                    <th>
+                                        <a href="cifrado.html" style="color: white;">Cifrar</a>
+                                    </th>
+                                    <th>
+                                        <a href="descifrado.html" style="color: white;">Descifrado</a>
+                                    </th>
+                                </table>
+                            </center>
+                            <br>
+                        </div>
+                        <br>
+                        ppp
+                    </div>
+                </header>
+                ppp
+            </div>
+
+            <hr>
+            <div style="background-color: rgba(17, 196, 209, 0.5);">
+                <br>
+                <p style="color: white;">Sube tu archivo</p>
+                <br>
+                <input type="file" id="file-input" />
+                <br>
+                <br>
+            </div>
+            <hr>
+            <div style="background-color: rgba(17, 196, 209, 0.5);">
+                <h3 style="color: white;">Contenido del archivo:</h3>
+                <pre id="contenido-archivo"></pre>
+                <br>
+                <br>
+                <p style="color: white;">Clave con la cual cifrar</p>
+                <input type="text" id="clave">
+                <br>
+                <br>
+                <input type="button" onclick="Cifrar()" value="Cifrar">
+            </div>
+            <hr>
+            <br>
+            <div style="background-color: rgba(17, 196, 209, 0.5);">
+            <strong style="color: white;"> <label> Mensaje Original: </label> </strong>
+            <br>
+            <br>
+            <textarea id="text-val" rows="4" readonly>Contenido del archivo</textarea><br />
+
+            <br>
+            <br>
+
+
+            <strong style="color: white;"> <label> Mensaje Encriptado: </label> </strong>
+            <br>
+            <textarea id="demo1" rows="4" readonly></textarea>
+            <br>
+            <br>
+
+            </div>
+            <hr>
+            <div style="background-color: rgba(17, 196, 209, 0.5);">
+            <p style="color: white;">
+                Esto sera lo que se descargue, como un archivo txt
+            </p>
+            <br>
+
+            <input type="button" id="dwn-btn" value="Descargar" />
+        </div>
+    </p>
+    </center>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="js/aes.js"></script>
+</body>
+
+</html>
